@@ -2,17 +2,17 @@ package dev.orion.track_my_vehicle_auth_client;
 
 import dev.orion.grpc.auth.client.PermissionCheckRequest;
 import dev.orion.grpc.auth.client.PermissionCheckResponse;
-import dev.orion.grpc.auth.client.PermissionGrpcServiceGrpc;
+import dev.orion.grpc.auth.client.PermissionCheckServiceGrpc;
 import io.grpc.stub.StreamObserver;
-import io.netty.util.concurrent.CompleteFuture;
 import lombok.RequiredArgsConstructor;
+
 
 import java.util.concurrent.CompletableFuture;
 
 @RequiredArgsConstructor
 public class AuthClientDefault implements AuthClient {
 
-    private final PermissionGrpcServiceGrpc.PermissionGrpcServiceStub stub;
+    private final PermissionCheckServiceGrpc.PermissionCheckServiceStub stub;
 
     @Override
     public CompletableFuture<PermissionCheckResponse> checkPermission(PermissionCheckRequest request) {
