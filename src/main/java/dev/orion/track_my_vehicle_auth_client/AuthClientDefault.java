@@ -1,5 +1,6 @@
 package dev.orion.track_my_vehicle_auth_client;
 
+import dev.orion.commons.client.auth.AuthClient;
 import dev.orion.grpc.auth.client.PermissionCheckRequest;
 import dev.orion.grpc.auth.client.PermissionCheckResponse;
 import dev.orion.grpc.auth.client.PermissionCheckServiceGrpc;
