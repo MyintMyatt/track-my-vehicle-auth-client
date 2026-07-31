@@ -1,6 +1,5 @@
 package dev.orion.track_my_vehicle_auth_client;
 
-import dev.orion.commons.client.auth.AuthClient;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
